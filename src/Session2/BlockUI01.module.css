@@ -1,0 +1,37 @@
+.barContainer {
+  display: flex;
+  height: 48px;
+  width: 540px;
+  background-color: rgb(202, 198, 198);
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.leftColum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 160px;
+  background-color: rgb(196, 39, 39);
+}
+.leftColum span {
+  font-weight: bold;
+  color: white;
+}
+.rightColum {
+  display: flex;
+  flex: 1;
+}
+.precentageBar {
+  box-sizing: border-box;
+  background-color: blueviolet;
+  height: 48px;
+  width: 20%;
+  display: flex;
+  padding-left: 16px;
+  align-items: center;
+}
+.precentageBar span {
+  font-weight: bold;
+  color: white;
+}
