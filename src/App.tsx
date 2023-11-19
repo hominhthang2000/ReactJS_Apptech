@@ -22,6 +22,9 @@ import Gallery from "./Session3/Gallery";
 import Tab from "./Session3/Tab";
 import RatingClick from "./Session3/Rating/Ratingclick";
 import MoutingExample from "./Session3/LifecycleExample/MoutingExample";
+import Handlevent from "./Session4/Handlevent";
+import OneChoice from "./Session4/Quizz/OneChoice";
+import MultipleChoice from "./Session4/Quizz/MultipleChoice";
 
 //cơ chế hoạt động load trước của react
 // const buttons: any[] = [];
@@ -41,54 +44,67 @@ function App() {
       {/* {buttons.map((item) => {
         return item;
       })} */}
-      <h1>Hello</h1>
-      <Button text="Save" icon={<FaHome />} />
-      <Button text="Update" color="#2980b9" />
-      <Button text="Reset" color="#8e44ad" />
-      <Button text="Delet" />
-      <IconButton text="Get Started" iconRight={<AiOutlineArrowRight />} />
-      <IconButton text="Continue with Apple" iconLeft={<AiFillApple />} />
-      <IconButton text="Continue with Google" iconLeft={<BiLogoGoogle />} />
-      <IconButton text="Continue with Facebook" iconLeft={<BsFacebook />} />
-      <TeamButton
-        title="Bảo Nam"
-        imgUrls={[
-          "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_BSXPlBjoBeJruSaCamv7kQuMNjoIIWX0CITXUVoapFCbRM9g",
-        ]}
-      />
+      {/* <div className="">
+        <h1>Hello</h1>
+        <Button text="Save" icon={<FaHome />} />
+        <Button text="Update" color="#2980b9" />
+        <Button text="Reset" color="#8e44ad" />
+        <Button text="Delet" />
+        <IconButton text="Get Started" iconRight={<AiOutlineArrowRight />} />
+        <IconButton text="Continue with Apple" iconLeft={<AiFillApple />} />
+        <IconButton text="Continue with Google" iconLeft={<BiLogoGoogle />} />
+        <IconButton text="Continue with Facebook" iconLeft={<BsFacebook />} />
+        <TeamButton
+          title="Bảo Nam"
+          imgUrls={[
+            "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_BSXPlBjoBeJruSaCamv7kQuMNjoIIWX0CITXUVoapFCbRM9g",
+          ]}
+        />
 
-      <TeamButton
-        backgroundColor="#740EF5"
-        title="Minh Tuấn"
-        imgUrls={[
-          "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_BSXPlBjoBeJruSaCamv7kQuMNjoIIWX0CITXUVoapFCbRM9g",
-          "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_BSXPlBjoBeJruSaCamv7kQuMNjoIIWX0CITXUVoapFCbRM9g",
-          "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_BSXPlBjoBeJruSaCamv7kQuMNjoIIWX0CITXUVoapFCbRM9g",
-        ]}
-        subTitle="Super start"
-      />
-      <TeamButton
-        colortext="#000"
-        backgroundColor="#FFF614"
-        title="Bảo Nam"
-        imgUrls={[
-          "https://media.vov.vn/sites/default/files/styles/large/public/2021-01/tom_-_jerry.jpg",
-          "https://media.vov.vn/sites/default/files/styles/large/public/2021-01/tom_-_jerry.jpg",
-        ]}
-      />
-      <PowerButton status="on"></PowerButton>
-      <PowerButton status="off"></PowerButton>
-      <Products />
-      <BlockUI01 />
-      <Rating10 starts={3} />
-      <Counter />
-      <LikeButton />
-      <SwitchButton />
-      <CheckButton />
-      <Gallery />
-      <Tab />
+        <TeamButton
+          backgroundColor="#740EF5"
+          title="Minh Tuấn"
+          imgUrls={[
+            "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_BSXPlBjoBeJruSaCamv7kQuMNjoIIWX0CITXUVoapFCbRM9g",
+            "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_BSXPlBjoBeJruSaCamv7kQuMNjoIIWX0CITXUVoapFCbRM9g",
+            "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_BSXPlBjoBeJruSaCamv7kQuMNjoIIWX0CITXUVoapFCbRM9g",
+          ]}
+          subTitle="Super start"
+        />
+        <TeamButton
+          colortext="#000"
+          backgroundColor="#FFF614"
+          title="Bảo Nam"
+          imgUrls={[
+            "https://media.vov.vn/sites/default/files/styles/large/public/2021-01/tom_-_jerry.jpg",
+            "https://media.vov.vn/sites/default/files/styles/large/public/2021-01/tom_-_jerry.jpg",
+          ]}
+        />
+        <PowerButton status="on"></PowerButton>
+        <PowerButton status="off"></PowerButton>
+        <Products />
+        <BlockUI01 />
+        <Rating10 starts={3} />
+        <Counter />
+        <LikeButton />
+        <SwitchButton />
+        <CheckButton />
+        <Gallery />
+        <Tab />
 
-      <MoutingExample />
+        <MoutingExample />
+        <Handlevent />
+      </div> */}
+      <OneChoice
+        questionContent="Chiến thắng Điện Biên Phủ vào năm nào?"
+        answers={["1945", "1954", "1968", "1975", "1980"]}
+        correctAnswer="1954"
+      />
+      <MultipleChoice
+        questionContent="Những quốc gia nào từng vô địch World Cup?"
+        answers={["Anh", "Pháp", "Nhật", "Việt Nam", "Canada"]}
+        correctAnswers={["Anh", "Pháp"]}
+      />
     </div>
   );
 }
