@@ -25,6 +25,9 @@ import MoutingExample from "./Session3/LifecycleExample/MoutingExample";
 import Handlevent from "./Session4/Handlevent";
 import OneChoice from "./Session4/Quizz/OneChoice";
 import MultipleChoice from "./Session4/Quizz/MultipleChoice";
+import FillIntheBlank from "./Session4/Quizz/FillIntheBlank";
+import BasicForm from "./Seesion5/BasicForm";
+import MyForm from "./Seesion5/ReactFormHook";
 
 //cơ chế hoạt động load trước của react
 // const buttons: any[] = [];
@@ -95,7 +98,7 @@ function App() {
         <MoutingExample />
         <Handlevent />
       </div> */}
-      <OneChoice
+      {/* <OneChoice
         questionContent="Chiến thắng Điện Biên Phủ vào năm nào?"
         answers={["1945", "1954", "1968", "1975", "1980"]}
         correctAnswer="1954"
@@ -104,7 +107,15 @@ function App() {
         questionContent="Những quốc gia nào từng vô địch World Cup?"
         answers={["Anh", "Pháp", "Nhật", "Việt Nam", "Canada"]}
         correctAnswers={["Anh", "Pháp"]}
-      />
+      /> */}
+      {/* <FillIntheBlank
+        questionContent="Ai vô địch WC 2023 ___ . Hảy điền vào ô trống"
+        correctAnswers="Việt Nam"
+      /> */}
+      {/* <BasicForm /> */}
+
+      {/* SEESION5 */}
+      <MyForm />
     </div>
   );
 }
